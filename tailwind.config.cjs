@@ -1,9 +1,5 @@
-/** @type {import('tailwindcss').Config} */
-export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+module.exports = {
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
       colors: {
@@ -18,7 +14,8 @@ export default {
         "secondary-500": "#FFC132",
       },
       backgroundImage: (theme) => ({
-       "gradient-yellowred": "linear-gradient(90deg, #FF616A 0%, #FFC837 100%)",
+        "gradient-yellowred":
+          "linear-gradient(90deg, #FF616A 0%, #FFC837 100%)",
         "mobile-home": "url('./assets/HomePageGraphic.png')",
       }),
       fontFamily: {
@@ -39,4 +36,4 @@ export default {
     },
   },
   plugins: [],
-}
+};
