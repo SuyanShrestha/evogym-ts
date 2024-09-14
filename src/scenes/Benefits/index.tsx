@@ -17,6 +17,8 @@ const Benefits = ({ setSelectedPage }: Props) => {
       <motion.div
         onViewportEnter={() => setSelectedPage(SelectedPage.Benefits)}
       >
+
+        {/* HEADER SECTION */}
         <div className="md:my-5 md:w-3/5">
           <HText>MORE THAN JUST A GYM.</HText>
           <p className="my-5 text-sm">
